@@ -1,4 +1,6 @@
 CREATE TABLE `demo` (
+  `ID` varchar(36) NOT NULL,
+  `TS` varchar(50) DEFAULT NULL,
   `UNITID` varchar(1000) DEFAULT NULL,
   `NAME` varchar(50) DEFAULT NULL,
   `LY_SM` varchar(50) DEFAULT NULL,
@@ -15,7 +17,6 @@ CREATE TABLE `demo` (
   `DBR` varchar(50) DEFAULT NULL,
   `CREATE_NAME` varchar(36) DEFAULT NULL,
   `XBR` varchar(500) DEFAULT NULL,
-  `ID` varchar(36) NOT NULL,
   `STATE` varchar(50) DEFAULT NULL,
   `ZR_DW` varchar(36) DEFAULT NULL,
   `UPDATE_TIME` varchar(50) DEFAULT NULL,
@@ -27,7 +28,6 @@ CREATE TABLE `demo` (
   `TENANT_ID` varchar(50) DEFAULT NULL,
   `QT_LD` varchar(50) DEFAULT NULL,
   `ZBR` varchar(500) DEFAULT NULL,
-  `TS` varchar(50) DEFAULT NULL,
   `DR` decimal(65,3) DEFAULT NULL,
   `CREATE_USER` varchar(64) DEFAULT NULL,
   `LAST_MODIFIED` varchar(64) DEFAULT NULL,
@@ -37,7 +37,10 @@ CREATE TABLE `demo` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
+
 CREATE TABLE `demo_sub` (
+  `id` varchar(36) NOT NULL,
+  `NAME` varchar(50) DEFAULT NULL,
   `TENANT_ID` varchar(50) DEFAULT NULL,
   `UPDATE_TIME` varchar(50) DEFAULT NULL,
   `SUB_NAME` varchar(50) DEFAULT NULL,
@@ -57,8 +60,6 @@ CREATE TABLE `demo_sub` (
   `LAST_MODIFIED` varchar(64) DEFAULT NULL,
   `LAST_MODIFY_USER` varchar(64) DEFAULT NULL,
   `BPM_STATE` decimal(11,0) DEFAULT NULL,
-  `id` varchar(36) NOT NULL,
-  `NAME` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 

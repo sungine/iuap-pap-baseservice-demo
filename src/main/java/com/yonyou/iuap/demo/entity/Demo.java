@@ -373,7 +373,40 @@ public class Demo extends AbsDrModel implements Serializable {
         return this.zrr;
     }
 
-
+    @Override
+    public String toString() {
+        return "Demo{" +
+                "id='" + id + '\'' +
+                ", code='" + code + '\'' +
+                ", endDate='" + endDate + '\'' +
+                ", zrrName='" + zrrName + '\'' +
+                ", xbr='" + xbr + '\'' +
+                ", zbr='" + zbr + '\'' +
+                ", rwpf=" + rwpf +
+                ", lyCode='" + lyCode + '\'' +
+                ", qtLd='" + qtLd + '\'' +
+                ", zrDw='" + zrDw + '\'' +
+                ", jdBl=" + jdBl +
+                ", zrdwName='" + zrdwName + '\'' +
+                ", state='" + state + '\'' +
+                ", dbInfo='" + dbInfo + '\'' +
+                ", xbrName='" + xbrName + '\'' +
+                ", xbDwName='" + xbDwName + '\'' +
+                ", kpiLevel='" + kpiLevel + '\'' +
+                ", jfyq='" + jfyq + '\'' +
+                ", xbDw='" + xbDw + '\'' +
+                ", zbrName='" + zbrName + '\'' +
+                ", beginDate='" + beginDate + '\'' +
+                ", kpiFlag='" + kpiFlag + '\'' +
+                ", unitIdName='" + unitIdName + '\'' +
+                ", lySm='" + lySm + '\'' +
+                ", dbr='" + dbr + '\'' +
+                ", name='" + name + '\'' +
+                ", unitid='" + unitid + '\'' +
+                ", zyCd='" + zyCd + '\'' +
+                ", zrr='" + zrr + '\'' +
+                '}';
+    }
 }
 
 

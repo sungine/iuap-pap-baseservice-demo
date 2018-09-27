@@ -7,7 +7,6 @@ import com.yonyou.iuap.demo.entity.Demo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import static com.yonyou.iuap.baseservice.intg.support.ServiceFeature.ATTACHMENT;
 import static com.yonyou.iuap.baseservice.intg.support.ServiceFeature.LOGICAL_DEL;
 
 /**

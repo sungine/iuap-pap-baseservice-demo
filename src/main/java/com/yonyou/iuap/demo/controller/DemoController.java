@@ -47,12 +47,12 @@ public class DemoController extends GenericController<Demo> {
 
     private Logger logger = LoggerFactory.getLogger(DemoController.class);
 
-    private DemoService dubanService;
+    private DemoService demoService;
 
     @Autowired
-    public void setDubanService(DemoService dubanService) {
-        this.dubanService = dubanService;
-        super.setService(dubanService);
+    public void setDubanService(DemoService demoService) {
+        this.demoService = demoService;
+        super.setService(demoService);
     }
 
     @Override
