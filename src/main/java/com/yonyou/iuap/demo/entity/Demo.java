@@ -15,7 +15,7 @@ import java.io.Serializable;
 import java.math.BigDecimal;
 
 /**
- * 平台-督办任务主表
+ * 示例-主表
  */
 
 @JsonIgnoreProperties(ignoreUnknown = true)
