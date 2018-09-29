@@ -4,7 +4,7 @@
     <parent>
         <groupId>com.yonyou.iuap.pap</groupId>
         <artifactId>iuap-pap-parent</artifactId>
-        <version>3.6.0-SNAPSHOT</version>
+        <version>3.5.2-RELEASE</version>
     </parent>
 
     <artifactId>baseservice-demo</artifactId>
@@ -20,11 +20,11 @@
     	 <dependency>
              <groupId>com.yonyou.iuap.pap</groupId>
              <artifactId>iuap-pap-starter</artifactId>
-             <version>3.6.0-SNAPSHOT</version>
+             <version>3.5.2-RELEASE</version>
          </dependency>
          <dependency>
              <groupId>com.yonyou.iuap.middleware</groupId>
-             <version>3.5.1-SNAPSHOT</version>
+             <version>3.5.2-RELEASE</version>
              <artifactId>starter</artifactId>
              <scope>provided</scope>
          </dependency>
