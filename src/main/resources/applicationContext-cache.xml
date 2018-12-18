@@ -30,35 +30,6 @@
     <bean id="cacheManager" class="com.yonyou.iuap.cache.CacheManager">
         <property name="jedisTemplate" ref="jedisTemplate"/>
     </bean>	
-    
-    <!--  -->
-    <!-- <cache:annotation-driven cache-manager="annotationCacheManager" proxy-target-class="false"/> -->
-     <bean id="poolConfig" class="redis.clients.jedis.JedisPoolConfig">    
-         <property name="maxIdle" value="${redis.maxIdle}" />     
-         <property name="maxWaitMillis" value="${redis.maxWait}" />    
-         <property name="testOnBorrow" value="${redis.testOnBorrow}" />    
-     </bean>    
-  
-     <bean id="JedisConnectionFactory" class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory">
-     	<property name="poolConfig" ref="poolConfig" />  
-        <property name="hostName" value="${redis.host}" />  
-        <property name="port" value="${redis.port}" />  
-        <property name="password" value="${redis.pass}" />  
-     </bean>    
-    
-     <bean id="redisTemplate" class="org.springframework.data.redis.core.RedisTemplate">    
-         <property name="connectionFactory" ref="JedisConnectionFactory" />    
-     </bean>  
-     
-	<!-- <bean id="annotationCacheManager" class="org.springframework.cache.support.SimpleCacheManager">    
-         <property name="caches">    
-            <set>    
-                <bean class="com.yonyou.iuap_qy.example2.cache.RedisCache">  
-                     <property name="redisTemplate" ref="redisTemplate" />    
-                     <property name="name" value="default"/>  
-                </bean>  
-            </set>    
-         </property>    
-     </bean>  -->
+
      
 </beans>

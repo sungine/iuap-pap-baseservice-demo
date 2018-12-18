@@ -130,7 +130,7 @@
 	<bean
 		class="com.yonyou.iuap.mvc.exceptionhandle.service.impl.DBSysPromptService">
 		<property name="jt" ref="jdbcTemplate" />
-	</bean>
+	</bean>s
 
 	<bean id="autoMapperLoader" class="com.yonyou.iuap.baseservice.persistence.mybatis.ext.AutoMapperLoader"
 		  lazy-init="false">
