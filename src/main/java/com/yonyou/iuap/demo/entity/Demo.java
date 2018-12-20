@@ -7,10 +7,8 @@ import com.yonyou.iuap.baseservice.support.condition.Condition;
 import com.yonyou.iuap.baseservice.support.condition.Match;
 import com.yonyou.iuap.baseservice.support.generator.GeneratedValue;
 
-import javax.persistence.Column;
-import javax.persistence.Id;
-import javax.persistence.Table;
-import javax.persistence.Transient;
+import javax.persistence.*;
+import javax.persistence.metamodel.StaticMetamodel;
 import java.io.Serializable;
 import java.math.BigDecimal;
 
@@ -20,6 +18,7 @@ import java.math.BigDecimal;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 @Table(name = "demo")
+@Entity("statsDemo")
 @Associative(fkName = "fkDemoSub")
 public class Demo extends AbsDrModel implements Serializable {
     @Id
