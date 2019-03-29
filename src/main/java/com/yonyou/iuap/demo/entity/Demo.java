@@ -6,6 +6,7 @@ import com.yonyou.iuap.baseservice.entity.annotation.Associative;
 import com.yonyou.iuap.baseservice.support.condition.Condition;
 import com.yonyou.iuap.baseservice.support.condition.Match;
 import com.yonyou.iuap.baseservice.support.generator.GeneratedValue;
+import com.yonyou.iuap.baseservice.support.generator.Strategy;
 
 import javax.persistence.*;
 import javax.persistence.metamodel.StaticMetamodel;
@@ -21,8 +22,9 @@ import java.math.BigDecimal;
 @Associative(fkName = "fkDemoSub")
 public class Demo extends AbsDrModel implements Serializable {
     @Id
-    @GeneratedValue
     @Condition
+//    @GeneratedValue(strategy = Strategy.AUTOINC)
+    @GeneratedValue
     protected String id;//ID
 
     @Override

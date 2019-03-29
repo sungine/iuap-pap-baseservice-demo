@@ -114,7 +114,6 @@
 		<property name="dataSource" ref="dataSource"></property>
 	</bean>
     
-
 	<bean id="autoMapperLoader" class="com.yonyou.iuap.baseservice.persistence.mybatis.ext.AutoMapperLoader"
 		  lazy-init="false">
 		<property name="basePackage" value="com.yonyou.iuap.**.dao,com.yonyou.iuap.example.**.dao"/>
