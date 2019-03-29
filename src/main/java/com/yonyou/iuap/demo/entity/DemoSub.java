@@ -1,11 +1,7 @@
 package com.yonyou.iuap.demo.entity;
-import cn.hutool.core.date.DateUtil;
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.yonyou.iuap.baseservice.bpm.entity.AbsBpmModel;
 import com.yonyou.iuap.baseservice.entity.AbsDrModel;
-import com.yonyou.iuap.baseservice.print.entity.Printable;
-import com.yonyou.iuap.baseservice.multitenant.entity.MultiTenant;
-import com.yonyou.iuap.baseservice.entity.annotation.Reference;
 import com.yonyou.iuap.baseservice.support.condition.Condition;
 import com.yonyou.iuap.baseservice.support.condition.Match;
 import com.yonyou.iuap.baseservice.support.generator.GeneratedValue;
@@ -15,8 +11,6 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Transient;
 import java.io.Serializable;
-import java.util.Date;
-import java.util.Random;
 
 
 /**

@@ -7,7 +7,6 @@ import com.yonyou.iuap.demo.entity.Demo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import static com.yonyou.iuap.baseservice.intg.support.ServiceFeature.LOGICAL_DEL;
 
 /**
  * Demo主表 CRUD 核心服务,提供逻辑删除/乐观锁
@@ -35,6 +34,6 @@ public class DemoService extends GenericIntegrateService<Demo> {
      */
     @Override
     protected ServiceFeature[] getFeats() {
-        return new ServiceFeature[]{LOGICAL_DEL};
+        return new ServiceFeature[]{};
     }
 }

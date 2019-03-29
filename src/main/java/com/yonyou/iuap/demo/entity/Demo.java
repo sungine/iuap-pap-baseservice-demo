@@ -18,7 +18,6 @@ import java.math.BigDecimal;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 @Table(name = "demo")
-@Entity("statsDemo")
 @Associative(fkName = "fkDemoSub")
 public class Demo extends AbsDrModel implements Serializable {
     @Id
