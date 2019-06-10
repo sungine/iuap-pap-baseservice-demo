@@ -57,7 +57,7 @@
 	<logger name="com.ibatis" level="debug" />
 	<logger name="java.sql" level="debug" />-->
 
-	<root level="debug">
+	<root level="info">
 		<appender-ref ref="console" />
 		<appender-ref ref="ASYNC" />
 	</root>

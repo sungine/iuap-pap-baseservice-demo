@@ -36,8 +36,6 @@
 		<context:exclude-filter type="annotation"
 			expression="org.springframework.web.bind.annotation.ControllerAdvice" />
 	</context:component-scan>
-	<!-- 多语 -->
-	<bean id="applicationContextUtil" class="com.yonyou.iuap.i18n.ApplicationContextUtil" lazy-init="false"/>
 
 	<!-- 定义不同的日志、提示等信息的资源加载 -->
 	<bean id="messageSource"
