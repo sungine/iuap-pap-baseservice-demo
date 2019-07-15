@@ -35,6 +35,8 @@
 			expression="org.springframework.stereotype.Controller" />
 		<context:exclude-filter type="annotation"
 			expression="org.springframework.web.bind.annotation.ControllerAdvice" />
+        <context:exclude-filter type="annotation"
+                                expression="springfox.documentation.swagger2.annotations.EnableSwagger2"/>
 	</context:component-scan>
 
 	<!-- 定义不同的日志、提示等信息的资源加载 -->
